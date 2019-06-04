@@ -1,0 +1,279 @@
+\hypertarget{classSteeringControl}{}\section{Steering\+Control Class Reference}
+\label{classSteeringControl}\index{Steering\+Control@{Steering\+Control}}
+
+
+class \hyperlink{classSteeringControl}{Steering\+Control} is declared with its four double type private data members (wheelbase, trackwidth, cgz, vehicle\+Velocity) and four \hyperlink{classPoint}{Point(class)}type data members (Target, Veh\+Front, Veh\+Right, Veh\+Left) class \hyperlink{classSteeringControl}{Steering\+Control} has seven methods \+: compute\+\_\+and\+\_\+update\+\_\+coordinate set\+\_\+target\+\_\+and\+\_\+veh\+\_\+velocity get\+\_\+distance has\+\_\+reached\+\_\+target, get\+\_\+front\+\_\+coordinate, get\+\_\+left\+\_\+coordinate, get\+\_\+right\+\_\+coordinate  
+
+
+
+
+{\ttfamily \#include $<$Steering\+Control.\+h$>$}
+
+
+
+Collaboration diagram for Steering\+Control\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classSteeringControl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSteeringControl_abb1f91984cfc24893b61142fb5af297f}{Steering\+Control} (\hyperlink{classvirtualPoint}{virtual\+Point} \&, double)
+\begin{DoxyCompactList}\small\item\em Constructor for class \hyperlink{classSteeringControl}{Steering\+Control}. \end{DoxyCompactList}\item 
+\hyperlink{classSteeringControl_a9ebb8eef465b7a1adf81271e08e34835}{$\sim$\+Steering\+Control} ()
+\begin{DoxyCompactList}\small\item\em Destructor for class \hyperlink{classSteeringControl}{Steering\+Control}. \end{DoxyCompactList}\item 
+\hyperlink{classSteeringControlOutput}{Steering\+Control\+Output} \hyperlink{classSteeringControl_ad4ee84da254d91ecc1811da027b4482c}{compute\+\_\+and\+\_\+update\+\_\+coordinate} ()
+\begin{DoxyCompactList}\small\item\em method of the class \hyperlink{classSteeringControl}{Steering\+Control} to return the individual drive wheels velocities, steering angle and the coordinate position of the wheels after dt time period, based upon the user input of target coordinate and vehicle velocity and vehicle velocity. \end{DoxyCompactList}\item 
+void \hyperlink{classSteeringControl_a6698bb99d4feccac1d9dc8c961bfaf72}{set\+\_\+vehicle\+\_\+dimension} (double, double, double)
+\begin{DoxyCompactList}\small\item\em set\+\_\+vehicle\+\_\+dimension \+: takes the input from user and stores it \end{DoxyCompactList}\item 
+double \hyperlink{classSteeringControl_abf86c529e73e50fa87cf25be79f3d7f4}{get\+\_\+distance} (\hyperlink{classPoint}{Point}, \hyperlink{classPoint}{Point})
+\begin{DoxyCompactList}\small\item\em get\+\_\+distance \+: calculates distance \end{DoxyCompactList}\item 
+bool \hyperlink{classSteeringControl_a31b1c0fe098911c1001b3c77fa65fa96}{has\+\_\+reached\+\_\+target} ()
+\begin{DoxyCompactList}\small\item\em has\+\_\+reached\+\_\+target \+:checks for condition \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classSteeringControl_a0fdca7f565d9484877850f8be65e02cc}{get\+\_\+front\+\_\+coordinate} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+front\+\_\+coordinate \+: method to return front coordinate \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classSteeringControl_a78ca3cc603867ed714dce5b792365b43}{get\+\_\+left\+\_\+coordinate} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+left\+\_\+coordinate \+: method to return left coordinate \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classSteeringControl_a5778ab49477993b2e2b586630ca08410}{get\+\_\+right\+\_\+coordinate} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+right\+\_\+coordinate \+: method to return right coordinate \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvirtualPoint}{virtual\+Point} \& \hyperlink{classSteeringControl_ac3008c88d68138c338a4bd3ee32e46bd}{virtualpoint}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classSteeringControl_ae181dcc9db1d96ddd96ad2edcabed5b0}{Target}
+\item 
+double \hyperlink{classSteeringControl_aea9c0f68cdd1a1bee63712460874e54d}{vehicle\+Velocity}
+\item 
+double \hyperlink{classSteeringControl_a7236de7b5f030e67047cdeaea3dbabb4}{wheelbase}
+\item 
+double \hyperlink{classSteeringControl_a46bd4d409f6f74ecbc8dbfd44bf46b33}{trackwidth}
+\item 
+double \hyperlink{classSteeringControl_af9a3eafcb4395ff4bc6cc504531e8608}{cgz}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classSteeringControl_a460971214c3cf817819dc261e1a48828}{Veh\+Front}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classSteeringControl_a991991a5e295b9c729749c709b84f3b2}{Veh\+Right}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classSteeringControl_af444dd9970b9e9872d37c601a212d78a}{Veh\+Left}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{classSteeringControl}{Steering\+Control} is declared with its four double type private data members (wheelbase, trackwidth, cgz, vehicle\+Velocity) and four \hyperlink{classPoint}{Point(class)}type data members (Target, Veh\+Front, Veh\+Right, Veh\+Left) class \hyperlink{classSteeringControl}{Steering\+Control} has seven methods \+: compute\+\_\+and\+\_\+update\+\_\+coordinate set\+\_\+target\+\_\+and\+\_\+veh\+\_\+velocity get\+\_\+distance has\+\_\+reached\+\_\+target, get\+\_\+front\+\_\+coordinate, get\+\_\+left\+\_\+coordinate, get\+\_\+right\+\_\+coordinate 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Steering\+Control@{Steering\+Control}!Steering\+Control@{Steering\+Control}}
+\index{Steering\+Control@{Steering\+Control}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{Steering\+Control(virtual\+Point \&, double)}{SteeringControl(virtualPoint &, double)}}]{\setlength{\rightskip}{0pt plus 5cm}Steering\+Control\+::\+Steering\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf virtual\+Point} \&}]{vpoint, }
+\item[{double}]{vehiclevelocityvalue}
+\end{DoxyParamCaption}
+)}\hypertarget{classSteeringControl_abb1f91984cfc24893b61142fb5af297f}{}\label{classSteeringControl_abb1f91984cfc24893b61142fb5af297f}
+
+
+Constructor for class \hyperlink{classSteeringControl}{Steering\+Control}. 
+
+constructor \index{Steering\+Control@{Steering\+Control}!````~Steering\+Control@{$\sim$\+Steering\+Control}}
+\index{````~Steering\+Control@{$\sim$\+Steering\+Control}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{$\sim$\+Steering\+Control()}{~SteeringControl()}}]{\setlength{\rightskip}{0pt plus 5cm}Steering\+Control\+::$\sim$\+Steering\+Control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSteeringControl_a9ebb8eef465b7a1adf81271e08e34835}{}\label{classSteeringControl_a9ebb8eef465b7a1adf81271e08e34835}
+
+
+Destructor for class \hyperlink{classSteeringControl}{Steering\+Control}. 
+
+destructor 
+
+\subsection{Member Function Documentation}
+\index{Steering\+Control@{Steering\+Control}!compute\+\_\+and\+\_\+update\+\_\+coordinate@{compute\+\_\+and\+\_\+update\+\_\+coordinate}}
+\index{compute\+\_\+and\+\_\+update\+\_\+coordinate@{compute\+\_\+and\+\_\+update\+\_\+coordinate}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{compute\+\_\+and\+\_\+update\+\_\+coordinate()}{compute_and_update_coordinate()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Steering\+Control\+Output} Steering\+Control\+::compute\+\_\+and\+\_\+update\+\_\+coordinate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSteeringControl_ad4ee84da254d91ecc1811da027b4482c}{}\label{classSteeringControl_ad4ee84da254d91ecc1811da027b4482c}
+
+
+method of the class \hyperlink{classSteeringControl}{Steering\+Control} to return the individual drive wheels velocities, steering angle and the coordinate position of the wheels after dt time period, based upon the user input of target coordinate and vehicle velocity and vehicle velocity. 
+
+The method considers a real time latency of 0.\+01 sec.\+The first statement averages the of the left wheel coordinate and the right wheel coordinate to define a \hyperlink{classPoint}{Point(class)} Vehicle\+Axle\+Center. The \char`\"{}\+X\+Front\+Vel\+Unit\+Comp\char`\"{} computes the X component of front-\/wheel direction unit vector whereas the Y\+Front\+Vel\+Unit\+Comp calculates the Y component of front-\/wheel direction unit vector. Similarly,X\+Veh\+Orient\+Comp,Y\+Veh\+Orient\+Comp computes the X and Y component of the vehicle orientation(direction the of the front wheel from the center of the rear wheels). Veh\+Orient\+Angle and Approach\+Angle are calculated by taking tan inverse(atan2) of Y and X component of vehicle orientation and front wheel direction unit vector. A Steering angle Constraint is defined based upon the minimum value between 30 degree and the steering angle for a given velocity which can cause vehicle to tuple. The lower of two is chosen as steering angle constraint. The Steering angle is then calculated by substracting the Approach\+Angle to Veh\+Orient\+Angle. A positive value of steering angle indicates vehicle turning toward right direction (counter-\/clockwise), whereas the the negative value of the steering angle indicates vehicle turning toward left direction (clockwise direction). It is then checked whether the steering\+Angle is greater than the steering\+Angle\+Constraint. If the the magnitude of the steering angle is greater than the magnitude of steering angle constatint,the Steering\+Angle\+Constraint is set as the Steering Angle. vehicle\+Front\+Velocity is computed from the wheelbase, vehicle\+Velocity Steering\+Angle. Angular\+Velocity is computed by vehicle\+Front\+Velocity, Steering\+Angle and wheelbase. Left\+Wheel\+Speed and Right\+Wheel\+Speed is then calculated from the vehicle\+Velocity, Angular\+Velocity and the trackwidth. The coordinate of the front wheel(\+Veh\+Front) is then computed by adding the delta change after dt time to its existing value. Similarly,the coordinate of the axlecenter (Veh\+Axle\+Center) is then computed by adding the delta change after dt time to its existing value. Left\+Wheel coordinate and right wheel coordinate is then computed from the veh\+Axle\+Center, Veh\+Orient\+Angle and Angular\+Velocity. The function then returns the \hyperlink{classSteeringControlOutput}{Steering\+Control\+Output(class)} My\+Output having datamembers Left\+Wheel\+Speed, Right\+Wheel\+Speed and Steering\+Angle. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the \hyperlink{classSteeringControlOutput}{Steering\+Control\+Output(class)} My\+Output having data members Left\+Wheel\+Speed, Right\+Wheel\+Speed and Steering\+Angle. 
+\end{DoxyReturn}
+Veh\+Orient\+Angle and Approach\+Angle is calculated
+
+Steering\+Angle\+Constraint is calculated and implemented
+
+vehicle\+Front\+Velocity is calculated from vehicle\+Velocity,Steering\+Angle and wheelbase
+
+Updates the coordinates of Veh\+Front ,Veh\+Axle\+Center,Veh\+Left,Veh\+Left and Veh\+Right based on the vehiclevelocity,steering angle,orientaion angle\index{Steering\+Control@{Steering\+Control}!get\+\_\+distance@{get\+\_\+distance}}
+\index{get\+\_\+distance@{get\+\_\+distance}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{get\+\_\+distance(\+Point, Point)}{get_distance(Point, Point)}}]{\setlength{\rightskip}{0pt plus 5cm}double Steering\+Control\+::get\+\_\+distance (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{a, }
+\item[{{\bf Point}}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classSteeringControl_abf86c529e73e50fa87cf25be79f3d7f4}{}\label{classSteeringControl_abf86c529e73e50fa87cf25be79f3d7f4}
+
+
+get\+\_\+distance \+: calculates distance 
+
+calculates the distance between two Points a and b using pythagoras theorum. 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classPoint}{Point(class)}} & a having x1,y1 coordinate \\
+\hline
+{\em \hyperlink{classPoint}{Point(class)}} & b having x2,y2 coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double distance betwen the two points. 
+\end{DoxyReturn}
+\index{Steering\+Control@{Steering\+Control}!get\+\_\+front\+\_\+coordinate@{get\+\_\+front\+\_\+coordinate}}
+\index{get\+\_\+front\+\_\+coordinate@{get\+\_\+front\+\_\+coordinate}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{get\+\_\+front\+\_\+coordinate()}{get_front_coordinate()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Steering\+Control\+::get\+\_\+front\+\_\+coordinate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSteeringControl_a0fdca7f565d9484877850f8be65e02cc}{}\label{classSteeringControl_a0fdca7f565d9484877850f8be65e02cc}
+
+
+get\+\_\+front\+\_\+coordinate \+: method to return front coordinate 
+
+This method of class \hyperlink{classSteeringControl}{Steering\+Control} returns the x,y coordinates of the front wheel.\+The values are passed int the vector xfront and yfront to plot the front wheel trajectory path. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classPoint}{Point(class)} Veh\+Front having two datamembers with x and y value of the front wheel 
+\end{DoxyReturn}
+\index{Steering\+Control@{Steering\+Control}!get\+\_\+left\+\_\+coordinate@{get\+\_\+left\+\_\+coordinate}}
+\index{get\+\_\+left\+\_\+coordinate@{get\+\_\+left\+\_\+coordinate}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{get\+\_\+left\+\_\+coordinate()}{get_left_coordinate()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Steering\+Control\+::get\+\_\+left\+\_\+coordinate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSteeringControl_a78ca3cc603867ed714dce5b792365b43}{}\label{classSteeringControl_a78ca3cc603867ed714dce5b792365b43}
+
+
+get\+\_\+left\+\_\+coordinate \+: method to return left coordinate 
+
+This method of class \hyperlink{classSteeringControl}{Steering\+Control} returns the x,y coordinates of the left wheel.\+The values are passed int the vector xleft and yleft to plot the left wheel trajectory path. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classPoint}{Point(class)} Veh\+Left having two datamembers with x and y value of the left wheel 
+\end{DoxyReturn}
+\index{Steering\+Control@{Steering\+Control}!get\+\_\+right\+\_\+coordinate@{get\+\_\+right\+\_\+coordinate}}
+\index{get\+\_\+right\+\_\+coordinate@{get\+\_\+right\+\_\+coordinate}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{get\+\_\+right\+\_\+coordinate()}{get_right_coordinate()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Steering\+Control\+::get\+\_\+right\+\_\+coordinate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSteeringControl_a5778ab49477993b2e2b586630ca08410}{}\label{classSteeringControl_a5778ab49477993b2e2b586630ca08410}
+
+
+get\+\_\+right\+\_\+coordinate \+: method to return right coordinate 
+
+This method of class \hyperlink{classSteeringControl}{Steering\+Control} returns the x,y coordinates of the right wheel.\+The values are passed int the vector xright and yright to plot the right wheel trajectory path. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classPoint}{Point(class)} Veh\+Right having two datamembers with x and y value of the right wheel 
+\end{DoxyReturn}
+\index{Steering\+Control@{Steering\+Control}!has\+\_\+reached\+\_\+target@{has\+\_\+reached\+\_\+target}}
+\index{has\+\_\+reached\+\_\+target@{has\+\_\+reached\+\_\+target}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{has\+\_\+reached\+\_\+target()}{has_reached_target()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Steering\+Control\+::has\+\_\+reached\+\_\+target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSteeringControl_a31b1c0fe098911c1001b3c77fa65fa96}{}\label{classSteeringControl_a31b1c0fe098911c1001b3c77fa65fa96}
+
+
+has\+\_\+reached\+\_\+target \+:checks for condition 
+
+returns true if the front wheel of the vehicle is within 1 unit radius of the defined target. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\index{Steering\+Control@{Steering\+Control}!set\+\_\+vehicle\+\_\+dimension@{set\+\_\+vehicle\+\_\+dimension}}
+\index{set\+\_\+vehicle\+\_\+dimension@{set\+\_\+vehicle\+\_\+dimension}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{set\+\_\+vehicle\+\_\+dimension(double, double, double)}{set_vehicle_dimension(double, double, double)}}]{\setlength{\rightskip}{0pt plus 5cm}void Steering\+Control\+::set\+\_\+vehicle\+\_\+dimension (
+\begin{DoxyParamCaption}
+\item[{double}]{Wheelbase\+Value, }
+\item[{double}]{Trackwidth\+Value, }
+\item[{double}]{cgz\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{classSteeringControl_a6698bb99d4feccac1d9dc8c961bfaf72}{}\label{classSteeringControl_a6698bb99d4feccac1d9dc8c961bfaf72}
+
+
+set\+\_\+vehicle\+\_\+dimension \+: takes the input from user and stores it 
+
+Takes the three parameter and stores the value in the data members of \hyperlink{classSteeringControl}{Steering\+Control} 
+\begin{DoxyParams}{Parameters}
+{\em wheelbase-\/} & wheelbase of the vehile \\
+\hline
+{\em trackwidth} & of the vehicle \\
+\hline
+{\em cgz} & -\/ cgz of the vehicle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Steering\+Control@{Steering\+Control}!cgz@{cgz}}
+\index{cgz@{cgz}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{cgz}{cgz}}]{\setlength{\rightskip}{0pt plus 5cm}double Steering\+Control\+::cgz\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSteeringControl_af9a3eafcb4395ff4bc6cc504531e8608}{}\label{classSteeringControl_af9a3eafcb4395ff4bc6cc504531e8608}
+\index{Steering\+Control@{Steering\+Control}!Target@{Target}}
+\index{Target@{Target}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{Target}{Target}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Steering\+Control\+::\+Target\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSteeringControl_ae181dcc9db1d96ddd96ad2edcabed5b0}{}\label{classSteeringControl_ae181dcc9db1d96ddd96ad2edcabed5b0}
+\index{Steering\+Control@{Steering\+Control}!trackwidth@{trackwidth}}
+\index{trackwidth@{trackwidth}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{trackwidth}{trackwidth}}]{\setlength{\rightskip}{0pt plus 5cm}double Steering\+Control\+::trackwidth\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSteeringControl_a46bd4d409f6f74ecbc8dbfd44bf46b33}{}\label{classSteeringControl_a46bd4d409f6f74ecbc8dbfd44bf46b33}
+\index{Steering\+Control@{Steering\+Control}!Veh\+Front@{Veh\+Front}}
+\index{Veh\+Front@{Veh\+Front}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{Veh\+Front}{VehFront}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Steering\+Control\+::\+Veh\+Front\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSteeringControl_a460971214c3cf817819dc261e1a48828}{}\label{classSteeringControl_a460971214c3cf817819dc261e1a48828}
+\index{Steering\+Control@{Steering\+Control}!vehicle\+Velocity@{vehicle\+Velocity}}
+\index{vehicle\+Velocity@{vehicle\+Velocity}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{vehicle\+Velocity}{vehicleVelocity}}]{\setlength{\rightskip}{0pt plus 5cm}double Steering\+Control\+::vehicle\+Velocity\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSteeringControl_aea9c0f68cdd1a1bee63712460874e54d}{}\label{classSteeringControl_aea9c0f68cdd1a1bee63712460874e54d}
+\index{Steering\+Control@{Steering\+Control}!Veh\+Left@{Veh\+Left}}
+\index{Veh\+Left@{Veh\+Left}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{Veh\+Left}{VehLeft}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Steering\+Control\+::\+Veh\+Left\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSteeringControl_af444dd9970b9e9872d37c601a212d78a}{}\label{classSteeringControl_af444dd9970b9e9872d37c601a212d78a}
+\index{Steering\+Control@{Steering\+Control}!Veh\+Right@{Veh\+Right}}
+\index{Veh\+Right@{Veh\+Right}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{Veh\+Right}{VehRight}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Steering\+Control\+::\+Veh\+Right\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSteeringControl_a991991a5e295b9c729749c709b84f3b2}{}\label{classSteeringControl_a991991a5e295b9c729749c709b84f3b2}
+\index{Steering\+Control@{Steering\+Control}!virtualpoint@{virtualpoint}}
+\index{virtualpoint@{virtualpoint}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{virtualpoint}{virtualpoint}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf virtual\+Point}\& Steering\+Control\+::virtualpoint\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSteeringControl_ac3008c88d68138c338a4bd3ee32e46bd}{}\label{classSteeringControl_ac3008c88d68138c338a4bd3ee32e46bd}
+\index{Steering\+Control@{Steering\+Control}!wheelbase@{wheelbase}}
+\index{wheelbase@{wheelbase}!Steering\+Control@{Steering\+Control}}
+\subsubsection[{\texorpdfstring{wheelbase}{wheelbase}}]{\setlength{\rightskip}{0pt plus 5cm}double Steering\+Control\+::wheelbase\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSteeringControl_a7236de7b5f030e67047cdeaea3dbabb4}{}\label{classSteeringControl_a7236de7b5f030e67047cdeaea3dbabb4}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/saurav/\+Documents/\+Steering Control Module/cpp-\/boilerplate/include/\hyperlink{SteeringControl_8h}{Steering\+Control.\+h}\item 
+/home/saurav/\+Documents/\+Steering Control Module/cpp-\/boilerplate/app/\hyperlink{SteeringControl_8cpp}{Steering\+Control.\+cpp}\end{DoxyCompactItemize}

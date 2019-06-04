@@ -1,0 +1,4 @@
+<map id="virtualPoint" name="virtualPoint">
+<area shape="rect" id="node2" href="$classMockPoint.html" title="MockPoint" alt="" coords="5,80,89,107"/>
+<area shape="rect" id="node3" href="$classPoint.html" title="class Point is declared with its two data members namely X and Y and four methods : get_x set_x get_y..." alt="" coords="113,80,165,107"/>
+</map>
