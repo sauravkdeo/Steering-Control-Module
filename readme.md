@@ -1,4 +1,4 @@
-# Dteering Control Module
+# Steering Control Module
 [![Build Status](https://travis-ci.org/sauravkdeo/Steering-Control-Module.svg?branch=master)](https://travis-ci.org/sauravkdeo/Steering-Control-Module)
 [![Coverage Status](https://coveralls.io/repos/github/sauravkdeo/Steering-Control-Module/badge.svg?branch=master)](https://coveralls.io/github/sauravkdeo/Steering-Control-Module?branch=master)
 ---
